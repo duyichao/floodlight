@@ -74,7 +74,7 @@ public class ResponseTime implements IOFMessageListener, IFloodlightModule {
 	public void init(FloodlightModuleContext context) throws FloodlightModuleException {
 		floodlightProvider = 
 				context.getServiceImpl(IFloodlightProviderService.class);
-		logger = (Logger) LoggerFactory.getLogger(ResponseTime.class);
+		logger = LoggerFactory.getLogger(ResponseTime.class);
 	}
 
 	//在 startUp 方法中，注册对PACKET_IN消息的处理。
